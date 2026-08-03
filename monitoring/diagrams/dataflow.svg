@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
+  <style>
+    .step { fill:#fff7ed; stroke:#92400e; stroke-width:2; rx:6; }
+    .title { font:14px sans-serif; fill:#7c2d12; font-weight:bold; }
+    .desc { font:12px sans-serif; fill:#92400e; }
+    .arrow { stroke:#92400e; stroke-width:2; fill:none; marker-end:url(#a); }
+  </style>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#92400e" />
+    </marker>
+  </defs>
+
+  <!-- Steps -->
+  <rect x="40" y="40" width="260" height="80" class="step"/>
+  <text x="160" y="65" text-anchor="middle" class="title">1. File upload</text>
+  <text x="160" y="86" text-anchor="middle" class="desc">User uploads a file via frontend (tus or HTTP)</text>
+
+  <rect x="360" y="40" width="260" height="80" class="step"/>
+  <text x="490" y="65" text-anchor="middle" class="title">2. Store job</text>
+  <text x="490" y="86" text-anchor="middle" class="desc">App saves file and enqueues post-processing job</text>
+
+  <rect x="680" y="40" width="260" height="80" class="step"/>
+  <text x="810" y="65" text-anchor="middle" class="title">3. Post-processing</text>
+  <text x="810" y="86" text-anchor="middle" class="desc">Worker generates thumbnails, indexes, and updates metrics</text>
+
+  <path d="M300 80 L360 80" class="arrow" />
+  <path d="M620 80 L680 80" class="arrow" />
+
+  <!-- Metrics flow -->
+  <rect x="120" y="180" width="240" height="80" class="step"/>
+  <text x="240" y="200" text-anchor="middle" class="title">Metrics updated</text>
+  <text x="240" y="220" text-anchor="middle" class="desc">App or worker increments counters (requests, uploads, errors)</text>
+
+  <rect x="420" y="180" width="240" height="80" class="step"/>
+  <text x="540" y="200" text-anchor="middle" class="title">Prometheus scrape</text>
+  <text x="540" y="220" text-anchor="middle" class="desc">Prometheus scrapes /metrics periodically</text>
+
+  <rect x="720" y="180" width="240" height="80" class="step"/>
+  <text x="840" y="200" text-anchor="middle" class="title">Grafana dashboard</text>
+  <text x="840" y="220" text-anchor="middle" class="desc">Metrics appear on Grafana panels for monitoring</text>
+
+  <path d="M360 220 L420 220" class="arrow" />
+  <path d="M660 220 L720 220" class="arrow" />
+
+  <text x="20" y="480" class="desc">Dataflow diagram: shows the end-to-end path for uploads and metrics so it is easy to understand how events turn into graphs.</text>
+</svg>

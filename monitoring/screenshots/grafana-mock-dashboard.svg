@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <style>
+    .bg { fill:#0f172a; }
+    .panel { fill:#0f172a; stroke:#94a3b8; stroke-width:2; rx:6; }
+    .card { fill:#e6eef8; stroke:#c7d2fe; stroke-width:1; rx:6; }
+    .title { font:18px sans-serif; fill:#0f172a; font-weight:bold; }
+    .small { font:12px sans-serif; fill:#0f172a; }
+  </style>
+
+  <rect width="100%" height="100%" fill="#f8fafc"/>
+  <text x="30" y="40" class="title">Example Grafana Dashboard (mock)</text>
+
+  <!-- Panels -->
+  <rect x="30" y="70" width="550" height="220" class="card"/>
+  <text x="40" y="95" class="small">Request rate (per minute)</text>
+  <rect x="35" y="110" width="540" height="160" fill="#dbeafe" rx="4"/>
+
+  <rect x="620" y="70" width="550" height="220" class="card"/>
+  <text x="630" y="95" class="small">Error rate</text>
+  <rect x="625" y="110" width="540" height="160" fill="#fde68a" rx="4"/>
+
+  <rect x="30" y="310" width="550" height="220" class="card"/>
+  <text x="40" y="335" class="small">Queue length</text>
+  <rect x="35" y="350" width="540" height="160" fill="#fce7f3" rx="4"/>
+
+  <rect x="620" y="310" width="550" height="220" class="card"/>
+  <text x="630" y="335" class="small">Disk usage / Upload throughput</text>
+  <rect x="625" y="350" width="540" height="160" fill="#dcfce7" rx="4"/>
+
+  <text x="30" y="560" class="small">This is a mock image showing typical panels you might add to a Grafana dashboard for this project.</text>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
+  <style>
+    .box { fill:#f8fafc; stroke:#0f172a; stroke-width:2px; rx:8; }
+    .label { font: 16px sans-serif; fill:#0f172a; }
+    .small { font:12px sans-serif; fill:#334155; }
+    .arrow { stroke:#0f172a; stroke-width:2; fill:none; marker-end:url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f172a" />
+    </marker>
+  </defs>
+
+  <!-- App -->
+  <rect x="40" y="140" width="220" height="120" class="box"/>
+  <text x="150" y="170" text-anchor="middle" class="label">App</text>
+  <text x="150" y="190" text-anchor="middle" class="small">Laravel (HTTP + /metrics)</text>
+
+  <!-- Prometheus -->
+  <rect x="390" y="60" width="220" height="120" class="box"/>
+  <text x="500" y="90" text-anchor="middle" class="label">Prometheus</text>
+  <text x="500" y="110" text-anchor="middle" class="small">Scrapes /metrics</text>
+  <text x="500" y="130" text-anchor="middle" class="small">Stores time series</text>
+
+  <!-- Grafana -->
+  <rect x="740" y="140" width="220" height="120" class="box"/>
+  <text x="850" y="170" text-anchor="middle" class="label">Grafana</text>
+  <text x="850" y="190" text-anchor="middle" class="small">Visualize dashboards</text>
+  <text x="850" y="210" text-anchor="middle" class="small">Alerts and exploration</text>
+
+  <!-- Arrows -->
+  <path d="M260 200 L390 120" class="arrow" />
+  <text x="330" y="155" class="small">metrics (push/endpoint)</text>
+  <path d="M610 120 L740 200" class="arrow" />
+  <text x="680" y="145" class="small">query</text>
+
+  <!-- User browser -->
+  <rect x="420" y="260" width="160" height="90" class="box"/>
+  <text x="500" y="295" text-anchor="middle" class="label">User</text>
+  <text x="500" y="315" text-anchor="middle" class="small">Browser viewing Grafana</text>
+  <path d="M860 200 L560 270" class="arrow" />
+  <text x="720" y="225" class="small">HTTP / Grafana UI</text>
+
+  <!-- Notes -->
+  <text x="20" y="30" class="small">Architecture diagram: metrics flow from App to Prometheus; Grafana reads Prometheus and shows dashboards to users.</text>
+</svg>
