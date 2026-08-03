@@ -145,5 +145,3 @@ Contributing
 
 License
 - MIT - see composer.json
-
-If you want, I can also add a docker-compose monitoring file and prometheus config to the repo, or create example Grafana dashboards. Tell me which option you prefer and I will add it.
