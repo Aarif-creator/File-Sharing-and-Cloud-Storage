@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Common\Workspaces\Traits\BelongsToWorkspace;
+use Illuminate\Database\Eloquent\Builder;
+
+class Folder extends FileEntry
+{
+    use BelongsToWorkspace;
+
+    protected $guarded = [];
+    protected $table = 'file_entries';
+
+    protected $attributes = [
+        'type' => 'folder',
+    ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope('fsType', function (Builder $builder) {
+            $builder->where('type', 'folder');
+        });
+    }
+}

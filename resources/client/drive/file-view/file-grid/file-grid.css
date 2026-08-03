@@ -1,0 +1,29 @@
+.file-grid-container {
+  container-type: inline-size;
+}
+
+.file-grid {
+  @apply grid gap-4.5;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@container (min-width: 500px) {
+  .file-grid {
+    @apply grid gap-4.5;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@container (min-width: 800px) {
+  .file-grid {
+    @apply grid gap-4.5;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@container (min-width: 1040px) {
+  .file-grid {
+    @apply grid gap-4.5;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

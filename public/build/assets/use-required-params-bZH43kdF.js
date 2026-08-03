@@ -1,0 +1,1 @@
+import{y as e}from"./chunk-KS7C4IRE-DUdAYDvm.js";var t=t=>{let n=e();for(let e of t)if(!n[e])throw Error(`This component should not be rendered on a route which does not have the ${e} parameter`);return n};export{t};

@@ -1,0 +1,1 @@
+import{t as e}from"./use-settings-DS7gRdar.js";function t({isUsingInvite:t}={}){let{social:n}=e();return!n?.google?.enable&&!n?.facebook?.enable&&!n?.twitter?.enable&&(!n?.envato?.enable||!!t)}export{t};

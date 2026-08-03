@@ -1,0 +1,1 @@
+import{Kn as e,k as t,lr as n}from"./icons-CKyeVnOB.js";var r=n();function i({value:n}){return n?(0,r.jsx)(e,{className:`size-4 text-positive`}):(0,r.jsx)(t,{className:`size-4 text-destructive`})}export{i as t};

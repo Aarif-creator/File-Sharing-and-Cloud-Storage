@@ -1,0 +1,1 @@
+function e(e,t){return{...t,message:e}}export{e as t};

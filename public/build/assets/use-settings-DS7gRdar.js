@@ -1,0 +1,1 @@
+import{i as e}from"./bootstrap-data-store-BHnOF9iG.js";function t(){return e(e=>e.data?.settings)}export{t};

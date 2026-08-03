@@ -1,0 +1,1 @@
+import{lr as e}from"./icons-CKyeVnOB.js";import{i as t}from"./bootstrap-data-store-BHnOF9iG.js";import{t as n}from"./helmet-TfoOXsM-.js";var r=e();function i(){let{default_meta_tags:e}=t(e=>e.data);return(0,r.jsx)(n,{tags:e})}export{i as t};

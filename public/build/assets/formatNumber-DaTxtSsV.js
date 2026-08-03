@@ -1,0 +1,1 @@
+import{t as e}from"./stringifyLocale-CkHjdQTJ.js";var t=new Map;function n(n,r){let i=JSON.stringify({locale:e(n),options:r}),a=t.get(i);if(a)return a;let o=new Intl.NumberFormat(n,r);return t.set(i,o),o}function r(e,t,r){return e==null?``:n(t,r).format(e)}function i(e,t,n){return e==null?``:n?r(e,t,n):r(e/100,t,{style:`percent`})}export{i as n,n as r,r as t};

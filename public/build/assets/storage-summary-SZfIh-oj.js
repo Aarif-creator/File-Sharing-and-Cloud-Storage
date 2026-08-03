@@ -1,0 +1,1 @@
+import{lr as e,wr as t}from"./main-ChlK4xf1.js";import{t as n}from"./pretty-bytes-Bj-BYEHc.js";function r(){return t({queryKey:[`storage-summary`],queryFn:()=>e(),select:i})}function i(e){let t=e.available===null?0:e.used*100/e.available;return{usedFormatted:n(e.used,2),availableFormatted:n(e.available??0,0),percentage:t,used:e.used,available:e.available}}export{r as t};

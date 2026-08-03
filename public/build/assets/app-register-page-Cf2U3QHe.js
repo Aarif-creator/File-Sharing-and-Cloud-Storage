@@ -1,0 +1,1 @@
+import{lr as e}from"./icons-CKyeVnOB.js";import{t}from"./use-settings-DS7gRdar.js";import{RegisterPage as n}from"./register-page-Dz10e8HS.js";import{t as r}from"./demo-login-panel-SjzLsQw4.js";var i=e();function a(){let{site:e}=t();return(0,i.jsx)(n,{children:e?.demo?(0,i.jsx)(r,{}):null})}export{a as Component};

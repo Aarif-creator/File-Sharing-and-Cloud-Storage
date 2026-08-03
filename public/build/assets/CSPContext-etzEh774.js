@@ -1,0 +1,1 @@
+import{a as e}from"./rolldown-runtime-CNC7AqOf.js";import{ur as t}from"./icons-CKyeVnOB.js";var n=e(t(),1),r=n.createContext(void 0),i={disableStyleElements:!1};function a(){return n.useContext(r)??i}export{a as t};

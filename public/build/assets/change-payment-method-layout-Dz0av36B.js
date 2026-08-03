@@ -1,0 +1,1 @@
+import{lr as e}from"./icons-CKyeVnOB.js";import{t}from"./trans-T2o8nM4c.js";import{i as n}from"./chunk-KS7C4IRE-DUdAYDvm.js";var r=e();function i(){return(0,r.jsxs)(`div`,{children:[(0,r.jsx)(`h1`,{className:`my-8 text-3xl font-bold`,children:(0,r.jsx)(t,{message:`Change payment method`})}),(0,r.jsx)(n,{})]})}export{i as Component};

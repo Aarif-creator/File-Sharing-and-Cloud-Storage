@@ -1,0 +1,1 @@
+import{lr as e}from"./icons-CKyeVnOB.js";import{v as t}from"./chunk-KS7C4IRE-DUdAYDvm.js";import{n,o as r,r as i,t as a}from"./two-factor-panel-D4BJy1Es.js";var o=e();function s(){let e=t();return(0,o.jsxs)(`div`,{children:[(0,o.jsx)(r,{}),(0,o.jsx)(a,{user:e}),(0,o.jsx)(n,{user:e}),(0,o.jsx)(i,{})]})}export{s as Component};

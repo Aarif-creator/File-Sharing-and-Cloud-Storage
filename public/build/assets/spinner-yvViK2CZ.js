@@ -1,0 +1,1 @@
+import{Vt as e,lr as t}from"./icons-CKyeVnOB.js";import{Tn as n}from"./useBaseUiId-pg9iv7PX.js";var r=t();function i({className:t,...i}){return(0,r.jsx)(e,{role:`status`,"aria-label":`Loading`,className:n(`size-4 animate-spin`,t),...i})}export{i as t};

@@ -1,0 +1,1 @@
+import{t as e}from"./useSuspenseQuery-DawFDXPL.js";import{gn as t}from"./main-ChlK4xf1.js";function n(){return e({...t(),select:r})}function r(e){for(let t in e)if(t===`themes`||t===`defaults`)continue;else Array.isArray(e[t])?e[t]=e[t].map(r):typeof e[t]==`object`?e[t]=r(e[t]):typeof e[t]==`number`?e[t]=e[t].toString():e[t]??(e[t]=``);return e}export{n as t};
