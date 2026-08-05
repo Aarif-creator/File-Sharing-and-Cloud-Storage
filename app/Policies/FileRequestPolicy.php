@@ -43,6 +43,3 @@ class FileRequestPolicy extends BasePolicy
             $this->hasPermission($user, 'file_requests.delete');
     }
 }
-
-
-//thinking of adding more here but //
