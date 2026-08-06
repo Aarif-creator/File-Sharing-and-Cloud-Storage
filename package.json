@@ -87,7 +87,7 @@
     "nuqs": "^2.8.9",
     "performant-array-to-tree": "^1.11.0",
     "prosemirror-state": "^1.4.3",
-    "pusher-js": "^8.4.0",
+    "pusher-js": "^8.6.0",
     "qr-code-styling": "^1.9.2",
     "react": "^19.1.0",
     "react-ace": "^14.0.1",
